@@ -8,7 +8,13 @@ head,body {
     background-position: left;
     background-attachment: fixed;
 }
-
+footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
 .hlava {
     margin:150px;
     background-color:indianred;
@@ -16,6 +22,14 @@ head,body {
     padding:25px;
     border-radius: 9px;
     width: 100;
+
+}
+
+.hlava h2 {
+    font-family: "Comic Sans MS";
+    font-style: normal;
+    font-weight: bold;
+
 }
 
 .div1 {
@@ -34,7 +48,7 @@ head,body {
     height: 100;
 }
 .ramcek{
-    border-radius: 9px;
+    border-radius: 50px;
 }
 
 .ramcek,style{
