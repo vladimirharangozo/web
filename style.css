@@ -28,7 +28,11 @@ head,body {
     border-radius: 9px;
     width: 10;
 }
-
+.foto{
+    border-radius: 9px;
+    width:10;
+    height: 100;
+}
 .ramcek{
     border-radius: 9px;
 }
