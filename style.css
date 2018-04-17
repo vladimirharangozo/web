@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+head,body {
+    background-image: url("img/krajina.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+}
+
+.hlava {
+    margin:150px;
+    background-color:indianred;
+    color:black;
+    padding:25px;
+    border-radius: 9px;
+    width: 100;
+}
+
+.div1 {
+    margin-left:0%;
+    padding:8px 16px;
+    height:0px;
+}
+
+.img {
+    border-radius: 9px;
+    width: 10;
+}
+
+.ramcek{
+    border-radius: 9px;
+}
+
+.ramcek,style{
+    margin:150px;
+    background-color:white;
+    color:black;
+    padding:25px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: indianred;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+background
+
+section {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    position: fixed
+}
