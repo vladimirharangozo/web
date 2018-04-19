@@ -20,9 +20,9 @@ footer {
     background-color:indianred;
     color:black;
     padding:25px;
-    border-radius: 9px;
-    width: 100;
-
+    border-radius: 0px;
+    width: 600px;
+    position: center;
 }
 
 .hlava h2 {
@@ -39,16 +39,17 @@ footer {
 }
 
 .img {
-    border-radius: 9px;
+    border-radius: 0px;
     width: 10;
 }
 .foto{
     border-radius: 9px;
-    width:10;
-    height: 100;
+    width:200px;
+    height: 250px;
+
 }
 .ramcek{
-    border-radius: 50px;
+    border-radius: 0px;
 }
 
 .ramcek,style{
@@ -62,7 +63,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: hidden;
     position: fixed;
     top: 0;
     width: 100%;
@@ -82,18 +83,4 @@ li a {
 
 li a:hover:not(.active) {
     background-color: indianred;
-}
-
-.active {
-    background-color: #4CAF50;
-}
-</style>
-background
-
-section {
-    margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-    position: fixed
 }
