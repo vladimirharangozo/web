@@ -2,12 +2,15 @@
     box-sizing: border-box;
 }
 
-head,body {
+head,
+body {
     background-image: url("img/krajina.jpg");
     background-repeat: no-repeat;
     background-position: left;
     background-attachment: fixed;
+    width: 100%;
 }
+
 footer {
     padding: 1em;
     color: white;
@@ -15,14 +18,26 @@ footer {
     clear: left;
     text-align: center;
 }
+
 .hlava {
-    margin:150px;
-    background-color:indianred;
-    color:black;
-    padding:25px;
+    margin: 150px;
+    background-color: indianred;
+    color: black;
+    padding: 25px;
     border-radius: 0px;
     width: 600px;
     position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: left;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+.hlava,p {
+     font-family: "Comic Sans MS";
+    font-style: normal;
+    font-weight: bold;
 }
 
 .hlava h2 {
@@ -32,38 +47,95 @@ footer {
 
 }
 
+h2 {
+    color: #3d4451;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 800;
+    text-align: center;
+    font-family: "Open Sans";
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000000;
+}
+
 .div1 {
-    margin-left:0%;
-    padding:8px 16px;
-    height:0px;
+    margin-left: 0%;
+    padding: 8px 16px;
+    height: 0px;
+}
+
+div.html {
+    height: 24px;
+    width: 60%
+}
+
+div.js {
+    height: 24px;
+    width: 30%
+}
+
+div.ps {
+    height: 24px;
+    width: 90%
+}
+
+div.php {
+    height: 24px;
+    width: 15%
 }
 
 .img {
     border-radius: 0px;
-    width: 10;
+    width: 0;
 }
-.foto{
-    border-radius: 9px;
-    width:200px;
-    height: 250px;
+
+.foto {
+    border-radius: 0px;
+    width: 20%;
+    height: ;
 
 }
-.ramcek{
+
+.ramcek {
     border-radius: 0px;
 }
 
-.ramcek,style{
-    margin:150px;
-    background-color:white;
-    color:black;
-    padding:25px;
+div.en {
+    height: 24px;
+    width: 80%
 }
+
+div.de {
+    height: 24px;
+    width: 75%
+}
+
+div.ru {
+    height: 24px;
+    width: 60%
+}
+
+.ramcek,
+style {
+    margin: 150px;
+    background-color: white;
+    color: black;
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: left;
+}
+
+ramcek,
+h2 {
+    text-align: center;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: hidden;
+    background-color: black;
     position: fixed;
     top: 0;
     width: 100%;
@@ -79,6 +151,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 li a:hover:not(.active) {
