@@ -6,87 +6,137 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div class="hlava">
-            <section>
-                <h1>Vladimír Harangozó</h1>
-                <p>I'm future Junior Front-End Developer</p>
-                <img class="foto" src="img/foto.jpg" alt="hidden">
-                <p></p>
-            </section>
+    <header>
+        <div class="row">
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#section1">Portfolio</a></li>
+                        <li><a href="#section2">Software Skills</a></li>
+                        <li><a href="#section3">Experience</a></li>
+                        <li><a href="#section4">Languages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <center>
-            <section>
-                <div class="ramcek">
-                    <h2>PROFILE</h2>
-                    <p></p>
-                    <p></p>
+    </header>
+    <main>
+        <div class="content">
+            <section id="home">
+                <div class="container0">
+                    <div class="row">
+                        <h1>Vladimír Harangozó</h1>
+                        <p>I'm future Junior Front-End Developer</p>
+                        <img class="foto" src="img/foto.jpg" alt="">
+                        <p></p>
+                    </div>
                 </div>
             </section>
-            <section>
-                <div class="ramcek">
-                    <h2>SOFTWARE SKILLS</h2>
-                    <p>HTML-CSS</p>
-                    <div class="html">
-                        <div class="w3-red">60%</div>
-                    </div><br>
-                    <p>JavaScript</p>
-                    <div class="js">
-                        <div class="w3-red">30%</div>
-                    </div><br>
-                    <p>Photoshop</p>
-                    <div class="ps">
-                        <div class="w3-red">90%</div>
-                    </div><br>
-                    <p>PHP</p>
-                    <div class="php">
-                        <div class="w3-red">15%</div>
-                    </div><br>
-                </div>
-            </section>
-            <section>
-                <div class="ramcek">
-                    <h2>PERSONALITY</h2>
-                    <p></p>
-                    <p></p>
-                </div>
-            </section>
-            <section>
-                <div class="ramcek">
-                    <h2>LANGUAGES</h2>
-                    <p>English</p>
-                    <div class="en">
-                        <div class="w3-red">80%</div>
-                    </div><br>
-                    <p>German</p>
-                    <div class="de">
-                        <div class="w3-red">75%</div>
-                    </div><br>
-                    <p>Russian</p>
-                    <div class="ru">
-                        <div class="w3-red">60%</div>
-                    </div><br>
-                </div>
-            </section>
-        </center>
+            <center>
+                <section id="section1">
+                    <div class="container">
+                        <div class="row">
+                            <h2>PORTFOLIO</h2>
+                            <p>Hello! I’m Vladimír. Junior Web Developer specializing in front end development.</p>
+                            <p>I have good experience with various programs like HTML, CSS, SASS, CSS Javascript, Bootstrap.</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="section2">
+                    <div class="center">
+                        <div class="row">
+                            <h2>SOFTWARE SKILLS</h2>
+                            <div class="skillBox">
+                                <p>HTML-CSS</p>
+                                <p>60%</p>
+                                <div class="skill">
+                                    <div class="skill_level" style="width:60%"></div>
+                                </div>
+                            </div>
+                            <div class="skillBox">
+                                <p>JavaScript</p>
+                                <p>30%</p>
+                                <div class="skill">
+                                    <div class="skill_level" style="width:30%"></div>
+                                </div>
+                            </div>
+                            <div class="skillBox">
+                                <p>Photoshop</p>
+                                <p>90%</p>
+                                <div class="skill">
+                                    <div class="skill_level" style="width:90%"></div>
+                                </div>
+                            </div>
+                            <div class="skillBox">
+                                <p>PHP</p>
+                                <p>15%</p>
+                                <div class="skill">
+                                    <div class="skill_level" style="width:15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="section3">
+                    <div class="container">
+                        <div class="row">
+                            <h2>EXPERIENCE</h2>
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </section>
+                <section id="section4">
+                    <div class="container">
+                        <div class="row">
+                            <h2>LANGUAGES</h2>
+                            <p>English</p>
+                            <div class="en">
+                                <div class="w3-red">80%</div>
+                            </div><br>
+                            <p>German</p>
+                            <div class="de">
+                                <div class="w3-red">75%</div>
+                            </div><br>
+                            <p>Russian</p>
+                            <div class="ru">
+                                <div class="w3-red">60%</div>
+                            </div><br>
+                        </div>
+                    </div>
+                </section>
+            </center>
+        </div>
     </main>
     <div>
         <footer>Copyright &copy; Vladimír Harangozó</footer>
     </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                $("nav ul").toggleClass("showing");
+            });
+        });
 
+        $(window).on("scroll", function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        })
+    </script>
 </body>
 
 </html>
