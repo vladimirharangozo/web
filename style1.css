@@ -23,7 +23,7 @@ nav.black {
 }
 
 nav.black .logo {
-    height: 60px;
+    height: 30px;
 }
 
 nav .logo {
@@ -183,7 +183,7 @@ section#home .container {
     }
     .responsive-bar .logo img {
         float: left;
-        height: 50px;
+        height: 5px;
     }
     .responsive-bar .menu {
         float: right;
@@ -200,7 +200,7 @@ section#home .container {
         height: 60px;
         padding:0;
     }
-    nav .logo {
+    nav .logo img{
         display: none;
     }
     nav ul {
