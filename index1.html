@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+        $(window).on("scroll", function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        })
+
+    </script>
+</head>
+
+<body>
+    <div class="responsive-bar">
+        <div class="logo">
+            <img src="img/gold+CV.png">
+        </div>
+        <div class="menu">
+            <h4>Menu</h4>
+        </div>
+    </div>
+    <nav>
+        <div class="logo">
+            <img src="img/gold+CV.png">
+        </div>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#section1">Portfolio</a></li>
+            <li><a href="#section2">Software Skills</a></li>
+            <li><a href="#section3">Experience</a></li>
+            <li><a href="#section4">Languages</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="row">
+                    <h1>Vladimír Harangozó</h1>
+                    <p>I'm future Junior Front-End Developer</p>
+                    <img class="foto" src="img/foto.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="section1"></section>
+        <div class="container">
+            <div class="row">
+                <h2>PORTFOLIO</h2>
+                <p>Hello! I’m Vladimír. Junior Web Developer specializing in front end development.</p>
+                <p>I have good experience with various programs like HTML, CSS, SASS, CSS Javascript, Bootstrap.</p>
+            </div>
+        </div>
+        <section id="section2"></section>
+        <div class="container">
+            <div class="row">
+                <h2>SOFTWARE SKILLS</h2>
+                <div class="skillBox">
+                    <p>HTML-CSS</p>
+                    <div class="skill">
+                        <div class="skill_level" style="width:60%"></div>
+                    </div>
+                </div>
+                <div class="skillBox">
+                    <p>JavaScript</p>
+                    <div class="skill">
+                        <div class="skill_level" style="width:30%"></div>
+                    </div>
+                </div>
+                <div class="skillBox">
+                    <p>Photoshop</p>
+                    <div class="skill">
+                        <div class="skill_level" style="width:90%"></div>
+                    </div>
+                </div>
+                <div class="skillBox">
+                    <p>PHP</p>
+                    <div class="skill">
+                        <div class="skill_level" style="width:15%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="section3">
+            <div class="container">
+                <div class="row">
+                    <h2>EXPERIENCE</h2>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+        <section id="section4">
+            <div class="container">
+                <div class="row">
+                    <h2>LANGUAGES</h2>
+                    <div class="skillBox">
+                        <p>English</p>
+                        <div class="skill">
+                            <div class="skill_level" style="width:80%"></div>
+                        </div>
+                    </div>
+                    <div class="skillBox">
+                        <p>German</p>
+                        <div class="skill">
+                            <div class="skill_level" style="width:75%"></div>
+                        </div>
+                    </div>
+                    <div class="skillBox">
+                        <p>Russian</p>
+                        <div class="skill">
+                            <div class="skill_level" style="width:60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact"></section>
+    </main>
+    <div>
+        <footer>Copyright &copy; Vladimír Harangozó</footer>
+    </div>
+</body>
+
+</html>

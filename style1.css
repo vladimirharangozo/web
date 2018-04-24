@@ -1,0 +1,226 @@
+@import url("https://fonts.googleaepis.com/css?family=Roboto:700");
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+nav.black {
+    background: rgba(0, 0, 0, .8);
+    height: 80px;
+    padding: 10px 50px;
+}
+
+nav.black .logo {
+    height: 60px;
+}
+
+nav .logo {
+    float: left;
+    line-height: 30px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    float: right;
+    margin: 16px 46px;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    list-style: 80px;
+    color: #262626;
+    padding: 5px 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #fff;
+    background: #f00;
+}
+
+footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+
+section#home {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.63);
+    background-image: url(img/pristav.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    color: #fff;
+    overflow: hidden;
+    min-height: 100vh;
+    text-align: center;
+    text-shadow: 0 0 20px #000;
+}
+
+
+.container {
+    overflow: hidden;
+    min-height: 25vh;
+    text-align: center;
+    text-shadow: 0 0 20px #000;
+}
+
+.container,
+style {
+    background-color: hidden;
+    padding: 5px;
+    box-shadow: text-align: center;
+    margin: 25px;
+}
+
+
+section#home .container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.foto {
+    border-radius: 50%;
+    width: 250px;
+    align-items: center;
+
+}
+
+.skillBox {
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 25px;
+
+}
+
+.skillBox p {
+    color: #000;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+.skillBox p:nth-child(2) {
+    float: right;
+    position: relative;
+    top: -25px;
+}
+
+.skill {
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.skill_level {
+    background: #cd5c5c;
+    width: 100%;
+    height: 5px;
+    border-radius: 50px;
+}
+
+.responsive-bar {
+    display: none;
+}
+
+@media(max-width 768px) {
+    .responsive-bar {
+
+        display: block;
+        width: 100%;
+        height: 60px;
+        background:     ;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 5px 20px;
+        box-sizing: border-box;
+        z-index: 1;
+
+    }
+    .responsive-bar .logo img {
+        float: left;
+        height: 50px;
+    }
+    .responsive-bar .menu {
+        float: right;
+        color:#fff;
+        margin: 0;
+        padding: 0;
+        line-height: 50px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    nav,
+    nav.black {
+        background: #262626;
+        height: 60px;
+        padding:0;
+    }
+    nav .logo {
+        display: none;
+    }
+    nav ul {
+        position: absolute;
+        width:100%;
+        top:60px;
+        left:0;
+        background:      ;
+        float: none;
+        display: block;
+    }
+    nav ul li {
+        width:100%;
+    }
+    nav ul li a {
+        display:block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 30px !important;
+        color:#fff;
+    }
+}
