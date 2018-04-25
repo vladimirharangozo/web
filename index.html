@@ -14,6 +14,7 @@
                 $("input[type='text'], textarea").val("");
             });
         });
+
     </script>
 </head>
 
@@ -31,7 +32,7 @@
     </header>
     <main>
         <section id="home">
-            <div class="container">
+            <div class="con">
                 <div class="row">
                     <h1>Vladimír Harangozó</h1>
                     <h5>I'm future Junior Front-End Developer</h5>
@@ -49,24 +50,24 @@
                 <div class="responsive">
                     <div class="gallery">
                         <a target="_blank" href="img/hory.jpg">
-      <img src="img/hory.jpg" alt="hory" width="300" height="200">
-    </a>
+                            <img src="img/hory.jpg" alt="hory" width="300" height="200">
+                        </a>
                         <div class="desc">Front-End Dream</div>
                     </div>
                 </div>
                 <div class="responsive">
                     <div class="gallery">
                         <a target="_blank" href="img/hory2.jpg">
-      <img src="img/hory2.jpg" alt="hory" width="300" height="200">
-    </a>
+                            <img src="img/hory2.jpg" alt="hory" width="300" height="200">
+                        </a>
                         <div class="desc">Photo</div>
                     </div>
                 </div>
                 <div class="responsive">
                     <div class="gallery">
                         <a target="_blank" href="img/krajina2.jpg">
-      <img src="img/krajina2.jpg" alt="krajina" width="300" height="200">
-    </a>
+                            <img src="img/krajina2.jpg" alt="krajina" width="300" height="200">
+                        </a>
                         <div class="desc">Design</div>
                     </div>
                 </div>
@@ -123,14 +124,18 @@
             <div class="container">
                 <div class="row">
                     <h2>Experience</h2>
-                    <article>
-                        <p>At noon they sat down by the roadside, near a little brook, and Dorothy opened her basket and got out some bread. She offered a piece to the Scarecrow, but he refused.</p>
-                        <p>&ldquo;I am never hungry,&rdquo; he said, &ldquo;and it is a lucky thing I am not, for my mouth is only painted, and if I should cut a hole in it so I could eat, the straw I am stuffed with would come out, and that would spoil the shape of my head.&rdquo;</p>
-                        <p>Dorothy saw at once that this was true, so she only nodded and went on eating her bread.</p>
-                        <p>&ldquo;Tell me something about yourself and the country you came from,&rdquo; said the Scarecrow, when she had finished her dinner. So she told him all about Kansas, and how gray everything was there, and how the cyclone had carried her to this queer Land of Oz.</p>
-                    </article>
-
-
+                    <div class="texts">
+                        <article>
+                            <h3>2013-2017</h3>
+                            <p>Studying at school, computer science and PC work.</p>
+                            <h3>2016-2017</h3>
+                            <p>Voluntary work as a forum moderator.</p>
+                            <h3 class="text3">2017-2018 </h3>
+                            <p>Wix web developer for gaming clans.</p>
+                            <h3>2018-</h3>
+                            <p>Junior Front-End Developer Course - Html and CSS, JS, JQUERY, Bootstrap.</p>
+                        </article>
+                    </div>
                 </div>
             </div>
             <section id="contact"></section>
@@ -141,9 +146,8 @@
                             <div class="content">
                                 <h1>CONTACT FORM</h1>
                             </div>
-
+                            <div id="googlemaps"></div>
                             <div class="form">
-
                                 <div class="top-form">
                                     <div class="inner-form">
                                         <div class="label">email</div>
@@ -156,16 +160,13 @@
                                         <input type="text" placeholder="Subject">
                                     </div>
                                 </div>
-
                                 <div class="bottom-form">
                                     <div class="inner-form">
                                         <div class="label">message</div>
                                         <textarea placeholder="Your message"></textarea>
                                     </div>
                                 </div>
-
                                 <div class="btn">send form</div>
-
                             </div>
                         </div>
                     </form>

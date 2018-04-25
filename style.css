@@ -14,7 +14,7 @@ section {
 
 #section1 {
     text-align: center;
-    margin:15px;
+    margin:px 10px;
     width: 100%;
     background-size: cover;
     background-position: bottom;
@@ -64,6 +64,11 @@ p {
 
 .text2 {
     padding: 80px 15px;
+    height: 5px
+}
+
+.text3 {
+    padding: 25px 25px;
     height: 5px
 }
 
@@ -408,7 +413,7 @@ small,
     text-transform: uppercase;
     letter-spacing: 5px;
     cursor: pointer;
-    margin: 5vh 90vh;
+    margin: 3vh 20px;
 }
 
 ::-webkit-input-placeholder {
