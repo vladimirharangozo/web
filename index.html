@@ -5,49 +5,36 @@
     <title>Page Title</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript">
-        $(window).on("scroll", function() {
-            if ($(window).scrollTop()) {
-                $('nav').addClass('black');
-            } else {
-                $('nav').removeClass('black');
-            }
-        })
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".btn").click(function() {
+                $("input[type='text'], textarea").val("");
+            });
+        });
     </script>
 </head>
 
 <body>
-    <div class="responsive-bar">
-        <div class="logo">
-            <img src="img/gold+CV.png">
-        </div>
-        <div class="menu">
-            <h4>Menu</h4>
-        </div>
-    </div>
-    <nav>
-        <div class="logo">
-            <img src="img/gold+CV.png">
-        </div>
-        <ul>
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#section1">Portfolio</a></li>
-            <li><a href="#section2">Software Skills</a></li>
-            <li><a href="#section3">Experience</a></li>
-            <li><a href="#section4">Languages</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul class="topnav">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#section1">About</a></li>
+                <li><a href="#section2">Software Skills</a></li>
+                <li><a href="#section3">Experience</a></li>
+                <li class="right"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section id="home">
             <div class="container">
                 <div class="row">
                     <h1>Vladimír Harangozó</h1>
-                    <p>I'm future Junior Front-End Developer</p>
+                    <h5>I'm future Junior Front-End Developer</h5>
                     <img class="foto" src="img/foto.jpg" alt="">
                 </div>
             </div>
@@ -55,76 +42,137 @@
         <section id="section1"></section>
         <div class="container">
             <div class="row">
-                <h2>PORTFOLIO</h2>
-                <p>Hello! I’m Vladimír. Junior Web Developer specializing in front end development.</p>
-                <p>I have good experience with various programs like HTML, CSS, SASS, CSS Javascript, Bootstrap.</p>
+                <h2>About me</h2>
+                <h4>Hello! I’m Vladimír. Junior Web Developer specializing in front end development.</h4>
+                <h4>I have good experience with various programs like HTML, CSS, SASS, CSS Javascript, Bootstrap.</h4><br>
+                <h2>Portfolio</h2>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="img/hory.jpg">
+      <img src="img/hory.jpg" alt="hory" width="300" height="200">
+    </a>
+                        <div class="desc">Front-End Dream</div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="img/hory2.jpg">
+      <img src="img/hory2.jpg" alt="hory" width="300" height="200">
+    </a>
+                        <div class="desc">Photo</div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="img/krajina2.jpg">
+      <img src="img/krajina2.jpg" alt="krajina" width="300" height="200">
+    </a>
+                        <div class="desc">Design</div>
+                    </div>
+                </div>
             </div>
         </div>
         <section id="section2"></section>
         <div class="container">
             <div class="row">
-                <h2>SOFTWARE SKILLS</h2>
-                <div class="skillBox">
-                    <p>HTML-CSS</p>
-                    <div class="skill">
-                        <div class="skill_level" style="width:60%"></div>
-                    </div>
+                <div class="responsive2">
+                    <article>
+                        <h2 class="text1">SOFTWARE SKILLS</h2>
+                        <div class="skillBox">
+                            <p>HTML-CSS</p>
+                            <div class="skill">
+                                <div class="skill_level" style="width:60%"></div>
+                            </div>
+                        </div>
+                        <div class="skillBox">
+                            <p>JavaScript</p>
+                            <div class="skill">
+                                <div class="skill_level" style="width:30%"></div>
+                            </div>
+                        </div>
+                        <div class="skillBox">
+                            <p>Photoshop</p>
+                            <div class="skill">
+                                <div class="skill_level" style="width:90%"></div>
+                            </div>
+                        </div>
+                        <br>
+                        <h2 class="text2">LANGUAGES</h2>
+                        <div class="skillBox">
+                            <p>English</p>
+                            <div class="skill">
+                                <div class="skill_level" style="width:80%"></div>
+                            </div>
+                        </div>
+                        <div class="skillBox">
+                            <p>German</p>
+                            <div class="skill">
+                                <div class="skill_level" style="width:75%"></div>
+                            </div>
+                        </div>
+                        <div class="skillBox">
+                            <p>Russian</p>
+                            <div class="skill">
+                                <div class="skill_level" style="width:60%"></div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-                <div class="skillBox">
-                    <p>JavaScript</p>
-                    <div class="skill">
-                        <div class="skill_level" style="width:30%"></div>
-                    </div>
+            </div>
+            <section id="section3"></section>
+            <div class="container">
+                <div class="row">
+                    <h2>Experience</h2>
+                    <article>
+                        <p>At noon they sat down by the roadside, near a little brook, and Dorothy opened her basket and got out some bread. She offered a piece to the Scarecrow, but he refused.</p>
+                        <p>&ldquo;I am never hungry,&rdquo; he said, &ldquo;and it is a lucky thing I am not, for my mouth is only painted, and if I should cut a hole in it so I could eat, the straw I am stuffed with would come out, and that would spoil the shape of my head.&rdquo;</p>
+                        <p>Dorothy saw at once that this was true, so she only nodded and went on eating her bread.</p>
+                        <p>&ldquo;Tell me something about yourself and the country you came from,&rdquo; said the Scarecrow, when she had finished her dinner. So she told him all about Kansas, and how gray everything was there, and how the cyclone had carried her to this queer Land of Oz.</p>
+                    </article>
+
+
                 </div>
-                <div class="skillBox">
-                    <p>Photoshop</p>
-                    <div class="skill">
-                        <div class="skill_level" style="width:90%"></div>
-                    </div>
-                </div>
-                <div class="skillBox">
-                    <p>PHP</p>
-                    <div class="skill">
-                        <div class="skill_level" style="width:15%"></div>
-                    </div>
+            </div>
+            <section id="contact"></section>
+            <div class="container">
+                <div class="row">
+                    <form method="get" class="container">
+                        <div class="wrapper">
+                            <div class="content">
+                                <h1>CONTACT FORM</h1>
+                            </div>
+
+                            <div class="form">
+
+                                <div class="top-form">
+                                    <div class="inner-form">
+                                        <div class="label">email</div>
+                                        <input type="text" placeholder="Example@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="middle-form">
+                                    <div class="inner-form">
+                                        <div class="label">subject</div>
+                                        <input type="text" placeholder="Subject">
+                                    </div>
+                                </div>
+
+                                <div class="bottom-form">
+                                    <div class="inner-form">
+                                        <div class="label">message</div>
+                                        <textarea placeholder="Your message"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="btn">send form</div>
+
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-        <section id="section3">
-            <div class="container">
-                <div class="row">
-                    <h2>EXPERIENCE</h2>
-                    <p></p>
-                    <p></p>
-                </div>
-            </div>
-        </section>
-        <section id="section4">
-            <div class="container">
-                <div class="row">
-                    <h2>LANGUAGES</h2>
-                    <div class="skillBox">
-                        <p>English</p>
-                        <div class="skill">
-                            <div class="skill_level" style="width:80%"></div>
-                        </div>
-                    </div>
-                    <div class="skillBox">
-                        <p>German</p>
-                        <div class="skill">
-                            <div class="skill_level" style="width:75%"></div>
-                        </div>
-                    </div>
-                    <div class="skillBox">
-                        <p>Russian</p>
-                        <div class="skill">
-                            <div class="skill_level" style="width:60%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contact"></section>
+        <section id="section5"></section>
     </main>
     <div>
         <footer>Copyright &copy; Vladimír Harangozó</footer>
